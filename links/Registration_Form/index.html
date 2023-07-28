@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Wild Rift Registration Form</h1>
+        <p>Fill out this form with required infomation.</p>
+
+        <form>
+            <fieldset>
+                <label for="first-name">First Name:<input id="first-name" type="text" required></label>
+                <label for="last-name">Last Name:<input id="last-name" type="text" required></label>
+                <label for="email">Email:<input id="email" type="email" required></label>
+                <label for="create-password">Create Password:<input id="create-password" type="password" pattern="[a-z0-5]{8,}" required ></label>
+                <label for="terms-and-conditions"><input type="checkbox" required name="terms-and-conditions" class="terms">I accept the <a href="https://www.riotgames.com/en/terms-of-service">terms and conditions:</a></label>
+            </fieldset>
+            <fieldset>
+                <label for="age">Input your age (years):<input id="age" type="number" min="13" max="130" required></label>
+                <label for="referrer">How did you hear about us?
+                <select id="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">Wild Rift News</option>
+                    <option value="2">Wild Rift YouTube</option>
+                    <option value="3">From a Friend</option>
+                    <option value="4">Other</option>
+                </select>
+                </label>
+                <label for="bio">Provide a bio:
+                    <textarea id="bio" rows="3" cols="30" placeholder="I like Wild Rift....."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
